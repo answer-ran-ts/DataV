@@ -1,0 +1,123 @@
+.dataV {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.full-screen-container {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/bg3.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left top;
+  overflow: hidden;
+}
+.dataV-top {
+  width: 100%;
+  height: 124px;
+  color: rgb(56, 233, 254);
+}
+
+.dataV-content {
+  display: flex;
+  flex: 1;
+}
+.top-left {
+  width: 440px;
+}
+.top-center {
+  flex: 1;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 26px;
+  text-shadow: 0 0 10px rgb(98, 224, 238), 0 0 50px rgb(56, 233, 254),
+    0 0 200px rgb(56, 233, 254);
+}
+.top-right {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-right: 100px;
+}
+.dataV-left,
+.dataV-right {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dataV-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 10px;
+}
+.dataV-center-t {
+  height: 956px;
+}
+.tool-btn {
+  display: inline-block;
+  background: url(../img/btn.png) no-repeat;
+  background-size: 100% 100%;
+  color: #06ffd9;
+  text-align: center;
+  font-style: italic;
+  font-weight: 550;
+  font-size: 20px;
+  padding: 4px 30px;
+  line-height: 35px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.backBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  user-select: none;
+}
+.dataV-left-t {
+  width: 440px;
+  height: 30%;
+}
+
+.dataV-left-c {
+  width: 440px;
+  height: 30%;
+}
+
+.dataV-left-b {
+  width: 440px;
+  height: 30%;
+}
+
+.dataV-right-t {
+  flex: 1;
+  width: 440px;
+  height: 30%;
+}
+
+.dataV-right-c {
+  flex: 1;
+  width: 440px;
+  height: 30%;
+}
+
+.dataV-right-b {
+  flex: 1;
+  width: 440px;
+  height: 30%;
+}
+.test {
+  border-image-source: url(/static/img-templet/border-229-6a0fdf839ec2ef45.gif);
+  border-image-slice: 43 20 24 24 fill;
+  border-width: 43px 20px 24px 24px;
+  border-style: solid;
+  background-clip: padding-box;
+  filter: blur(0px);
+}

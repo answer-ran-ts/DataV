@@ -1,0 +1,67 @@
+<!--
+ * @Description: 
+ * @Date: 2022-09-30 09:42:51
+ * @LastEditors: ranqi
+ * @LastEditTime: 2022-10-09 20:14:29
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>地图大屏类业务模板</title>
+  <link rel="stylesheet" href="./static/css/global.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="./static/js/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="loader" v-if="loading">
+      <div class="loader-inner ball-beat">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="dataV">
+      <div class="full-screen-container" ref="fullScreenRef">
+        <div class="dataV-top flex align-center">
+          <div class="top-left"></div>
+          <div class="top-center">
+            <div>地图大屏类业务模板</div>
+          </div>
+          <div class="top-right">{{time}}</div>
+        </div>
+        <div class="dataV-content">
+          <div class="dataV-left">
+            <div class="dataV-left-t" id="echarts_e1"></div>
+            <div class="dataV-left-c" id="echarts_e2"></div>
+            <div class="dataV-left-b" id="echarts_e3"></div>
+          </div>
+          <div class="dataV-center">
+            <div class="dataV-center-t" id="echarts_e8"></div>
+            <div @click="back" class="tool-btn backBtn" v-if="backStatus">返回</div>
+          </div>
+          <div class="dataV-right">
+            <div class="dataV-right-t" id="echarts_e4"></div>
+            <div class="dataV-right-c" id="echarts_e5"></div>
+            <div class="dataV-right-b" id="echarts_e6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./static/js/axios.min.js"></script>
+  <script src="./static/js/mock.min.js"></script>
+  <script src="./static/js/echarts.min.js"></script>
+  <script src="./static/js/request.js"></script>
+  <script src="./static/js/req.js"></script>
+  <script src="./static/js/mock_data.js"></script>
+  <script src="./static/js/echarts-option.js"></script>
+  <script src="./static/js/index.js"></script>
+</body>
+
+</html>
